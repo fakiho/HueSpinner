@@ -7,13 +7,13 @@
 
 import UIKit
 
-final class HueSpinnerView: UIView {
+public final class HueSpinnerView: UIView {
 
-    override var layer: CAShapeLayer {
+    public override var layer: CAShapeLayer {
         return super.layer as! CAShapeLayer
     }
 
-    override class var layerClass: AnyClass {
+    public override class var layerClass: AnyClass {
         CAShapeLayer.self
     }
 
@@ -55,12 +55,12 @@ final class HueSpinnerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         configureShapePath()
     }
 
-    override func didMoveToWindow() {
+    public override func didMoveToWindow() {
         super.didMoveToWindow()
         animate()
     }

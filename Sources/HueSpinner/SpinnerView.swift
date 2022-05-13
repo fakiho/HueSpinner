@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class SpinnerView: UIView {
+public final class SpinnerView: UIView {
 
     private let strokeAnimation: [CABasicAnimation] = [
         StrokeAnimation(
@@ -49,7 +49,7 @@ final class SpinnerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         layer.cornerRadius = frame.width / 2
         configureShapePath()
