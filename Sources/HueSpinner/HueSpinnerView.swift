@@ -29,7 +29,7 @@ public final class HueSpinnerView: UIView {
 
     private let lineWidth: CGFloat
 
-    init(
+    public init(
         frame: CGRect = .zero,
         strokeColor: UIColor,
         lineWidth: CGFloat
@@ -44,7 +44,7 @@ public final class HueSpinnerView: UIView {
         NotificationCenter.default.addObserver(self, selector: #selector(refreshLayers), name: UIApplication.willEnterForegroundNotification, object: nil)
     }
 
-    convenience init(
+    public convenience init(
         strokeColor: UIColor = .systemPurple,
         lineWidth: CGFloat = 3
     ) {
@@ -65,7 +65,7 @@ public final class HueSpinnerView: UIView {
         animate()
     }
 
-    func animate() {
+    public func animate() {
         configureAnimation()
     }
 

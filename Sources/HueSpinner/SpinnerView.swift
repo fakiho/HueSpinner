@@ -34,7 +34,7 @@ public final class SpinnerView: UIView {
 
     private let shapeLayer: SpinnerShapeLayer
 
-    init(
+    public init(
         frame: CGRect = .zero,
         strokeColor: UIColor,
         lineWidth: CGFloat
@@ -55,7 +55,7 @@ public final class SpinnerView: UIView {
         configureShapePath()
     }
 
-    func animate() {
+    public func animate() {
         configureAnimation()
     }
 
